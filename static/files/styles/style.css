@@ -83,7 +83,7 @@ body > h1:nth-child(2) {
     align-items: center;
 }
 .logo > p {
-    font-size: 17px;
+    font-size: 16px;
 }
 .navigation {
     display: flex;
@@ -311,7 +311,7 @@ li.active > a {
     font-feature-settings: "opsz" 90;
 }
 .row > p {
-    font-size: 15px;
+    font-size: 14px;
     color: #f0f0f0;
     font-family: Poppins;
 }

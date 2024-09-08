@@ -75,6 +75,7 @@ header > .logo {
 .paragraph > p {
     color: #f0f0f0;
     font-family: Montserrat;
+    font-size: 14px;
     
 }
 .experience {
@@ -87,7 +88,7 @@ header > .logo {
     font-family: Montserrat;
     color: #f49097ec;
     position: relative;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
     margin-left: 1em;
 }
@@ -149,13 +150,14 @@ header > .logo {
     font-family: Poppins-Light;
     color: #f0f0f0;
     text-wrap: nowrap;
+    font-size: 14px;
 }
 .work-content {
     font-family: Poppins;
     color: #f49097;
 }
 .work-content > h2 {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 570;
     position: relative;
     text-wrap: nowrap;
@@ -175,7 +177,7 @@ header > .logo {
 }
 .work-content > p {
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     margin-top: 1em;
     display: -webkit-box;
