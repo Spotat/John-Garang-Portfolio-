@@ -4,6 +4,17 @@
         overflow-y: visible;
         padding: 10px;
     }
+    body > h1 {
+        margin-top: 5em;
+    }
+    body > h1:nth-child(1) {
+        text-wrap: nowrap;
+        width: 30%;
+        color: #9696963a;
+    }
+    body > h1:nth-child(2) {
+        margin-top: 2em;
+    }
     #particle-js#two {
         visibility: visible;
     }
@@ -101,5 +112,8 @@
         padding: 10px 15px;
         font-size: 16px;
         margin-bottom: 2em;
+    }
+    .footer {
+        display: block;
     }
 }

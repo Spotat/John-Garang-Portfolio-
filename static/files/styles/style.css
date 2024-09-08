@@ -30,6 +30,24 @@ body {
     gap: 2em;
     overflow: hidden;
 }
+body > h1 {
+    font-family: Montserrat;
+    font-size: 6em;
+    color: #9696962c;
+    z-index: -99;
+    transform: rotate(90deg);
+    position: absolute;
+    text-align: end;
+    margin-bottom: 1em;
+}
+body > h1:nth-child(2) {
+    transform: none;
+    text-align: left;
+    margin-top: 1em;
+    font-size: 4.5em;
+    color: #96969621;
+    -webkit-text-stroke: 1px #f0f0f0;
+}
 #particles-js {
     position: absolute;
     top: 0;
@@ -46,11 +64,10 @@ body {
 .side-nav {
     width: 100%;
     height: 100%;
-    background: #363535f6;
+    /* background: #363535f6; */
     border-radius: 15px;
     display: flex;
     color: aliceblue;
-    padding: 1em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -73,6 +90,9 @@ body {
     align-items: flex-start;
     gap: var(--gap, 10px);
     flex-direction: column;
+    background: #333333;
+    padding: 1em;
+    border-radius: 10px;
 }
 .navigation > p {
     font-size: 12px;
@@ -148,7 +168,7 @@ li.active > a {
 .portfolio-content > .card {
     width: 100%;
     height: fit-content;
-    background-color: #333333e5;
+    background-color: #333333;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
@@ -218,19 +238,21 @@ li.active > a {
 .top-nav {
     width: inherit;
     height: 60px;
-    background: #333333ef;
+    /* background: #333333ef; */
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em 2em;
+    /* padding: 1em 2em; */
+    padding: 1em;
     gap: var(--gap, 6em);
 }
 .top-nav > .position {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: var(--gap, 10px);
 }
 .position > img {
     width: 25px;
@@ -258,18 +280,21 @@ li.active > a {
 }
 .body-content {
     width: inherit;
-    height: 60vh;
-    background: #333333f5;
+    height: fit-content;
+    min-height: 60vh;
+    background: #333333;
     border-radius: 10px;
     padding: 2em;
     display: grid;
-    grid-template-columns: 2fr 1.3fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 .row > h5 {
     font-size: 16px;
     color: #969696;
     font-family: Montserrat;
+    background-color: #1b1b1b;
+    width: max-content;
     text-wrap: nowrap;
     margin-bottom: 1em;
     font-feature-settings: "wdth" 120;
@@ -281,7 +306,7 @@ li.active > a {
     font-family: Montserrat;
     text-wrap: nowrap;
     font-weight: 630;
-    margin-bottom: 2.5em;
+    margin-bottom: 1.5em;
     font-feature-settings: "wdth" 120;
     font-feature-settings: "opsz" 90;
 }
@@ -316,7 +341,8 @@ li.active > a {
 }
 .row > .profile-image {
     width: 100%;
-    height: 250px;
+    min-width: 200px;
+    height: 200px;
     border-radius: 50%;
     background: #1b1b1b;
 }
@@ -326,7 +352,7 @@ li.active > a {
     object-fit: cover;
     border-radius: 50%;
     object-position: top center;
-    filter: brightness(76%) grayscale(25%);
+    filter: brightness(66%) grayscale(45%);
 }
 .row > .profile-box {
     width: 100%;
@@ -386,16 +412,17 @@ li.active > a {
 }
 .about-section {
     width: inherit;
-    height: 67vh;
+    height: fit-content;
+    min-height: 60vh;
     background: #333;
     border-radius: 10px;
-    padding: 2em;
+    padding: 15px;
 }
 .about-section > h2 {
     font-family: Montserrat;
     color: #f0f0f0;
     font-weight: 610;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 .about-section > p {
     width: 90%;
@@ -406,7 +433,7 @@ li.active > a {
     margin-top: 1em;
 }
 .about-section > p#second {
-    margin-left: 4em;
+    margin-left: 2em;
 }
 .about-section > button {
     padding: 8px 15px;
@@ -425,4 +452,19 @@ li.active > a {
 .about-section > button:hover i {
     margin-left: 10px;
     transform: rotate(90deg);
+}
+footer {
+    display: none;
+    width: 100%;
+    padding: 1em;
+    margin-top: 5em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+.footer > .contact {}
+.contact > p, .copyright > p {
+    font-size: 16px;
+    font-family: Montserrat;
+    color: white;
+    margin-top: 5px;
 }
